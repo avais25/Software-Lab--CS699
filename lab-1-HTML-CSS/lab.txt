@@ -1,0 +1,92 @@
+HTML and CSS
+Assignment 1: html and CSS
+
+a) The goal of this assignment is to learn basics of html. You must create a simple homepage for yourself. Your homepage will be called index.html . Wherever you create it, you need to copy it to department web-server machine. Copy it to your public_html directory as follows:
+     
+      scp index.html username@mars.cse.iitb.ac.in:public_html/.
+     
+     (We will update you in case this does not work.) Your homepage will be http://www.cse.iitb.ac.in/~username/
+
+  You should try to use at least 10 different html tags in your homepage.
+
+b) Next you should create a very basic copy of any popular website that you chose. You should use CSS for formatting the page, and you should use at least 10 different CSS elements/tags in creating the page.
+
+Both parts will be of 5 marks each. They will be graded along the lines of Basic, Good, Excellent. 
+You must use basic html and CSS commands. You must not use any 3rd party library for this purpose. You must follow the basic guidelines given for your tags at http://www.w3schools.com. You must validate your pages using https://validator.w3.org/ 
+
+Assignment upload instructions will be given during the lab.
+
+
+
+
+----------------------------
+
+
+1) Create public_html directory in your mars home directory
+
+ssh <cseldapusername>@mars.cse.iitb.ac.in
+mkdir public_html
+Control-D
+
+2)Upload file to your home directory 
+
+scp index.html <cseldapusername>@mars.cse.iitb.ac.in:public_html/
+
+3) change permissions for the file
+
+ssh <cseldapusername>@mars.cse.iitb.ac.in
+cd public_html/
+chmod 744 index.html
+
+4)Visit your homepage
+
+cse.iitb.ac.in/~<cse_username>            ---For internal network
+www.cse.iitb.ac.in/~<cse_username>   ---From internet
+
+
+OR
+
+1) Open file manager.
+
+2) go to top left corner and select the Go menu , then select enter location.
+
+				OR
+
+			press Ctrl-L in file manager 
+
+3) enter the following address in the address bar
+
+	sftp://<cse_username>@mars.cse.iitb.ac.in
+
+4) go to
+
+	/users/pg17/<cse_username>/
+
+5) copy and paste using gui after creating public_html directory
+
+
+
+
+SUBMISSION IN MOODLE:
+
+-> Make text file called "link.txt" and enter the cse link to your homepage in this file.
+
+-> Make a single folder with all your files and images, including your link file. Compress it in tar.gz format.
+
+-> To make a tar file enter the following command from your terminal: 
+  
+		tar -zcvf <RollNo_lab1>.tar.gz <folder_to_compress> 
+
+
+-> Upload the tar file into moodle with your respective account.
+
+
+
+
+
+
+
+
+
+
+

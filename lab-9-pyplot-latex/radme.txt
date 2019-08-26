@@ -1,0 +1,52 @@
+Description:-
+The figures.py python code generates mustiple graphs from the data frame of Import and export csv file.
+It generates the following graphs :-
+1. pie chart of  import and export of top 5 countries.
+2. bar chart of import and export of top 5 commodities.
+3. Line plot of import and export of tea.
+4. Scatter plot of import and export of rice.
+5. Histogram range of total value and number of countries.
+It generates following table:-
+1. table.tex it contain the subtable of import csv file .It contain all the data about commodity "TEA"
+
+The report.tex completes all the given objectives. It inputs all the graph images and the table.tex file.
+
+
+Input files needed:-
+1.India_Exports_2011-12_And_2012-13.xls
+2.India_Imports_2011-12_And_2012-13.xls
+
+Output file of figures.py:-
+image1.jpg
+image2.jpg
+image3.jpg
+image4.jpg
+image5.jpg
+image6.jpg
+image7.jpg
+image8.jpg
+image9.jpg
+image10.jpg
+table.tex
+
+
+Output file of report.tex:-
+173050043_report.pdf
+
+
+
+How to run:-
+1. We first have to run python file to generate the graphs(image1.jpg,image2.jpg......image10.jpg) and table(table.tex)
+command:-
+
+python3 figures.py
+
+2. Next we will run the report.tex file to get the output pdf file(173050043_report.pdf)
+
+pdflatex -jobname=173050043_report report.tex;pdflatex -jobname=173050043_report report.tex
+
+this will run the pdflatex command twice tp properly  reference the output file.
+
+
+
+

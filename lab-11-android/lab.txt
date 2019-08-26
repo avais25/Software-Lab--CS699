@@ -1,0 +1,4 @@
+Android Development
+As discussed in class, develop an app as a front-end for your website developed in previous assignment. You can also chose to develop any other app that you wish.
+
+Submit a zip folder, following same conventions as in earlier assignment. The folder should contain the .apk file, that is your app. It should also contain a readme file explaining a) what the app does, and b) any deployment/emulator restrictions that your app may have. 

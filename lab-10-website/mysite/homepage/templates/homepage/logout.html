@@ -1,0 +1,31 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/homepage/css/home.css">
+		<title>Home Page</title>
+	<title>Logout</title>
+</head>
+<body>
+
+</body>
+</html>
+<body>
+	<img src="http://watchit.ca/skin/frontend/alomilano/2017watchit/images/Logo_WATCHIT_new_transparent.png" alt="movie" style="width:100%;height:200px;">
+	<h1>Logout</h1>
+<h1>You are successfully logged out.</h1>
+
+<form id="center" method="POST" action="/homepage/">
+	<div class="signup">
+	{% csrf_token%}
+	{{ form.as_p}}
+	</div>
+	<div class="buttons">
+	<input type="submit" value = "Home">
+</div>
+</form>
+
+
+
+</body>
+</html>

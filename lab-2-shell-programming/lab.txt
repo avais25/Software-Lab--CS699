@@ -1,0 +1,33 @@
+Shell Programming - Part 1
+You are expected to solve 5 different problems using shell programs. The problems must be related to topics discussed in class - related to files and text-substitution or processes e.t.c. They can be as simple as a one liner to any degree of complexity.
+
+They must be about automation of some activity that you would do manually. They must not be related to abstract things not related to daily computer use - say solving some mathematical problem or something.
+
+Remember, in real life, coming up with right problems to solve is as important as coming up with a solution. If you cannot solve it, someone else may solve it for you. Better to solve right problem wrongly than wrong problem rightly.
+
+
+Submission Instructions:
+1.Make 5 different script files having names script1.sh to script5.sh.
+2.Make a ”readme.txt” which contains your 5 problem statements corresponding to your script number. Your problem statement must not be only technical. It must also describe your own life-experience where the problem arose. 
+
+For example, my backup script, I may say that
+
+"After losing my correctly working code after making several changes - I decided to manually make a backup copy of my code frequently. Hence I wrote a script whose details are:
+
+Input:...
+
+Output:...
+
+"
+
+
+
+3.Also specify the execution commands to run your script in readme file.
+Eg:
+>>./script1.sh <parameters>.
+4.If your shell script contains an input file specify that in readme file and also
+add those file in a separate folder by name of ”input” so that script can be
+executed using this command
+>>./script1.sh input/
+5.Create a folder by name of <rollno lab2>. Create <rollno lab2>.tar.gz file.
+Upload this file as your submission.

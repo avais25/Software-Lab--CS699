@@ -1,0 +1,43 @@
+Description:-
+The program takes Import and Export xls file as input and give output acoording to question in a output file.
+In Q1 & Q2 it calculate top 5 country and commodity resoectively based on Value of 2011-2012
+In Q3 I have used outer join to merge both table. If value of import is 0 for some country in outputs "Zero Import" in export/import cell. If some value of import or export is not available it outputs "NotAvailable" in that cell and its respective ratiio and defict cell.
+In Q4 the 'query' method is used show all countries to whom our export is more than Rs 10,000 Cr.
+In Q5 the output of Q4 is stored along with import and export
+Format- "Country ,Import (INR),Export (INR)"
+In Q6 melt function (id_vars=['Country'], value_vars=['Export','Import']) is used on output of Q5 
+"Country,Transaction,Value (INR)"
+In Q7 Inntersection of commodities of both Import and Export is taken.
+
+Assumprions:-
+All the header and column name are taken accordinng to sample_output.xls file provided.
+In Q3 outer join is done and If value of import is 0 for some country in outputs "Zero Import" in export/import cell. If some value of import or export is not available it outputs "NotAvailable" in that cell and its respective ratiio and defict cell.
+Q7 contains commodities to both year.
+I have not removed "unspecified" as a country name so  it is present as output in some sheet.
+
+
+Input files needed:-
+1.India_Exports_2011-12_And_2012-13.xls
+2.India_Imports_2011-12_And_2012-13.xls
+
+Output file:-
+173050043_solution.xls
+
+
+
+How to run:-
+python3 solution.py
+
+
+
+
+Additioal modules needed apart from numpy and panda:-
+1.xlwt:-
+command to insatll:
+sudo pip3 install xlwt
+2.xlrd:-
+command to insatll:
+sudo pip3 install xlrd
+
+
+

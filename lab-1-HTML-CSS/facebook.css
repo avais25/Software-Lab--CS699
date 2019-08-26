@@ -1,0 +1,42 @@
+h1{
+color: white;
+}
+body{
+background-color:#3b5998;
+}
+p{
+font-size:17px;
+font-style: normal;
+color: white;
+}
+input[type=text]
+{
+border:1px solid blue;
+box-sizing: border-box;
+border-radius:2px;
+background-color: #C0C0C0;
+padding: 9px 9px;
+margin: 2px 2px;
+resize: none;
+}
+input[type=text]:focus
+{
+border: 2px solid green;
+cursor: text;
+box-shadow:0 2px 0 0 blue;
+}
+input[type=submit]:hover
+{
+border:2px solid green;
+background: blue;
+display: block;
+box-shadow:0 2px 0 0 blue;
+}
+input[type=submit]
+{
+height: 30px;
+width:90px;
+background: blue;
+display: block;
+
+}

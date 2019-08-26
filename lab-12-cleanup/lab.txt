@@ -1,0 +1,5 @@
+
+Code Cleanup
+Clean up the code for any one of your previous assignment. The changes made can be anything and need not be limited to what was discussed in class.
+
+Submit a tar file with same naming conventions as before. Include original code, revised code and a writeup on the changes.

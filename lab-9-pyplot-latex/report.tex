@@ -1,0 +1,259 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}		%importing various packages to use
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+\title{\huge Data Analysis Assignment \\ \hrulefill}
+
+\author{173050043 }
+\begin{document}
+\maketitle		%making title visible
+
+\section{Introduction}
+\label{sec:int}
+{\fontfamily{lmr}\fontsize{10}{20}\selectfont		%changing font style,size and formatting
+This is the programming assignment of \textbf{\textit{Software Lab Course (CS699)}}. In this assignment our aim is to do data analysis on a xls file which contain the statistic of import and export of India.}
+\subsection{Description of Input data}
+The input data consist of two files:-
+\begin{enumerate}						%making use of bullets
+\item India\_Imports\_2011-12\_And\_2012-13.xls
+\item India\_Exports\_2011-12\_And\_2012-13.xls
+\end{enumerate}
+
+Each of these files contain data about:-
+\begin{itemize}						%making use of bullets
+\item  Commodity
+\item  Country
+\item  Unit
+\item  Quantity-2011-12
+\item  Value-INR-2011-12
+\item  Quantity-2012-13
+\item  Value-INR-2012-13
+\end{itemize}
+				%making use of paragraph
+\paragraph{Commodity:-} It contain the name of the commodity Imported/Exported by India.
+\paragraph{Country:-} It contain the name of the Country with which Import/Export  is done.
+\paragraph{Unit:-} It  defines unit in which the quantity is defined.
+\paragraph{Quantity:-} It contains the quantity of the Commodity Exported/Imported.
+\paragraph{Value:-} It contains the value of the Commodity Exported/Imported.
+
+\section{Objective}				%using bullets in different styles
+\label{sec:obj}
+Objective of this assignment was to:-
+\begin{itemize}
+\item[$\Rightarrow$] Getting top 5 import and export destination
+\item[$\Rightarrow$] Getting top 5 imort and export commodity
+\item[$\Rightarrow$] Preparing single tablelong with trade defict and import-export ratio
+\item[$\Rightarrow$] Implementing the use of query function
+\item[$\Rightarrow$] Learning how to rename the columns
+\item[$\Rightarrow$] Implementing the use of melt function
+\item[$\Rightarrow$] Learning how to do intersectiion of table
+\end{itemize}
+
+
+
+\section{Graphs}					%adding various graphs geerated from figure.py code
+\label{sec:gra}
+We can conclude following graphs from the input file provided
+\subsection{Pie  Chart}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.80,width=\textwidth]{image1.jpg}
+  \caption{Import Pie Chart}
+  \label{fig:pie1}
+  
+\end{figure}
+
+Figure \ref{fig:pie1} shows Pie chart . It shows the total value imported by top 5 countries and other countries.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.80,width=\textwidth]{image2.jpg}
+  \caption{Export Pie Chart}
+  \label{fig:pie2}
+  
+\end{figure}
+
+Figure \ref{fig:pie2} shows Pie chart .It shows the total value exported by top 5 countries and other countries.
+
+
+\subsection{Bar Graph}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.70,width=\textwidth]{image3.jpg}
+  \caption{Import Bar Graph}
+  \label{fig:bar1}
+  
+\end{figure}
+
+Figure \ref{fig:bar1} shows a Bar Graph . It compare the import of top 5  commodities with respect to values.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.70,width=\textwidth]{image4.jpg}
+  \caption{Export Bar Graph}
+  \label{fig:bar2}
+  
+\end{figure}
+
+Figure \ref{fig:bar2} shows Pie chart . It compare the export of top 5  commodities with respect to values.
+
+\subsection{Plot line}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.80,width=\textwidth]{image5.jpg}
+  \caption{Import Plot Line for Tea}
+  \label{fig:plot1}
+  
+  
+  
+\end{figure}
+
+Figure \ref{fig:pie1} shows Plot line graph . It shows the quantity vs value plot of import for different years for the commodity TEA.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.80,width=\textwidth]{image6.jpg}
+  \caption{Export Plot Line for Tea}
+  \label{fig:plot2}
+  
+\end{figure}
+
+Figure \ref{fig:plot2} shows Plot line graph. It shows the quantity vs value plot of export for different years for the commodity TEA.
+
+
+\subsection{Scatter Plot}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.80,width=\textwidth]{image7.jpg}
+  \caption{Import Scatter plot for Rice}
+  \label{fig:sc1}
+  
+\end{figure}
+
+Figure \ref{fig:sc1} shows Scatter Plot. It shows the quantity vs value scatter plot of import for different years for the commodity RICE.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.80,width=\textwidth]{image8.jpg}
+  \caption{Export Scatter plot for Rice}
+  \label{fig:sc2}
+  
+\end{figure}
+
+Figure \ref{fig:sc2} shows Scatter Plot. It shows the quantity vs value scatter plot of export for different years for the commodity RICE.
+
+
+\subsection{Histogram}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.80,width=\textwidth]{image9.jpg}
+  \caption{Import Scatter plot for Rice}
+  \label{fig:his1}
+  
+\end{figure}
+
+Figure \ref{fig:his1} shows Histogram. This histogram shows number of countries that import for specific range of values.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.80,width=\textwidth]{image10.jpg}
+  \caption{Export Scatter plot for Rice}
+  \label{fig:his2}
+  
+\end{figure}
+
+Figure \ref{fig:his2} shows Histogram. This histogram shows number of countries that export for specific range of values.
+
+\newpage
+\section{Mathematical Formula}				%implementing some complex mathematical formula
+\label{sec:for}
+
+\subsection{Co relation Formula}
+\begin{equation}
+cor=
+\frac{(\sum_{i=1}^{n}xy)-(\sum_{i=1}^{n}x)(\sum_{i=1}^{n}y)}
+{\sqrt{[n\sum_{i=1}^{n}x^2-(\sum_{i=1}^{n}x)^2][n\sum_{i=1}^{n}y^2-(\sum_{i=1}^{n}y)^2]}}
+\label{for1}
+\end{equation}
+
+\subsection{Combination}
+
+\begin{equation}
+\binom nk = \frac{n!}{k!(n-k)!}
+\label{for2}
+\end{equation}
+
+\subsection{Integration}
+\begin{equation}
+\int\frac{1}{\sqrt{1-(x)^2}}=sin^{-1}x+c
+\label{for3}
+\end{equation}
+
+\subsection{Integration By Parts}
+\begin{equation}
+\int{v\frac{du}{dx}dx}=uv- \int{u\frac{dv}{dx}dx}
+\label{for4}
+\end{equation}
+
+\section{Table}					%adding table generated from figure.py code
+\label{sec:tab}
+\begin{table}[H]
+\centering
+\resizebox{0.60\width}{!}{\input{table.tex}}
+\caption{Tea import table}
+\label{tab1}
+\end{table}
+
+Table \ref{tab1} represents the deatail of Tea import. It shows all the countriess from which teaa is imported along with quantity and value for the year 2011-12 and 2012-13.
+
+\section{Conclusion}			%Concluding the assignment
+\label{sec:con}
+From this assignment we learn how to analyse a given set of raw data according to various parameters and extract meaningful information from it.
+
+\section{Summary}				%using reference to all the labels
+\label{sec:sum}
+This summary contains reference to all table, figure and sections:-
+{\fontfamily{pzc}\fontsize{10}{20}\selectfont			%changing font style,size and formatting
+\begin{itemize}
+\item Section \ref{sec:int} Gives the intoduction of the Assingment
+\item Section \ref{sec:obj} Gives the objective of the Assignment
+\item Section \ref{sec:gra} Shows all the graphical analysis of the Assignment
+	\begin{itemize}
+	\item Graph \ref{fig:pie1}	is the pie chart for import
+    \item Graph \ref{fig:pie2}	is the pie chart for export
+    \item Graph \ref{fig:bar1}	is the bar chart for import
+    \item Graph \ref{fig:bar2}	is the bar chart for export
+    \item Graph \ref{fig:plot1} is the plot line for tea import
+    \item Graph \ref{fig:plot2} is the plot line for tea export
+    \item Graph \ref{fig:sc1}	is the scatter plot for rice import
+    \item Graph \ref{fig:sc2}	is the scatter plot for rice export
+    \item Graph \ref{fig:his1} 	is he histogtam of export (no of country vs range)
+    \item Graph \ref{fig:his2} 	is he histogtam of export (no of country vs range)
+	\end{itemize}
+\item Section \ref{sec:for} Represent some complex mathematical formula
+	\begin{itemize}
+	\item Formula \ref{for1} is the formula  for co relation
+    \item Formula \ref{for2} is the formula  for Combination
+    \item Formula \ref{for3} is the formula for Integration
+    \item Formula \ref{for4} is the formula for Integration By parts
+	\end{itemize}
+\item Section \ref{sec:tab} Contains a sub table of the data frame
+	\begin{itemize}
+	\item Table \ref{tab1} conatins in information about tea import
+	\end{itemize}
+\item Section \ref{sec:con} contains  the conclusion if the assignment
+\item Section \ref{sec:sum} contains summary of the assignment
+\end{itemize}
+
+}
+
+
+\end{document}

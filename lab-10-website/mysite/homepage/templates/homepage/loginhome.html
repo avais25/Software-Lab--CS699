@@ -1,0 +1,44 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WatchIt!</title>
+</head>
+<body>
+
+</body>
+</html>
+<body>
+	<link rel="stylesheet" type="text/css" href="/static/homepage/css/home.css">
+	<img src="http://watchit.ca/skin/frontend/alomilano/2017watchit/images/Logo_WATCHIT_new_transparent.png" alt="movie" style="width:100%;height:200px;">
+
+	<h1>Welcome {{request.user.username}}!</h1>
+<br>
+<form id="center" action="/homepage/total/" method="POST">
+	{%csrf_token%}
+{% for movie in data %}
+Movie#{{movie.id}}<br>
+Name:-{{movie.movieName}}<br>
+Price:-{{movie.price}}<br>
+Seats Available:-{{movie.seats}}<br>
+Enter Number of seats you want to Book <input type="textbox" name="key" value="0" ><br><br>
+
+<img src="{{movie.imgUrl}}" alt="movie" style="width:500px;height:200px;">
+
+<br><br><br><br>
+
+{% endfor %}
+
+<div class="buttons">
+<input type="submit" value = "Book Now!">
+</div>
+</form>
+
+<form action="/homepage/logout">
+	<div class="buttons">
+	<input type="submit" value = "Logout">
+</div>
+</form>
+
+</body>
+</html>

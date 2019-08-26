@@ -1,0 +1,10 @@
+Website Development
+Develop a website of your choice. You can decide the contents of the website. You can also chose to copy a scaled down version of some popular website.
+
+It must have users, and data to be saved in database.
+
+You will also have to submit scripts that populate your website.
+
+There will be a master script that will carry out entire setup.
+
+Detailed submission instructions will be posted later.

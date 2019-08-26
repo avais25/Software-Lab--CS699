@@ -1,0 +1,18 @@
+Pyplot and Latex
+Make a report on the previous data assignment in latex. You can chose any other topic also if you wish.
+
+The report can be in single column or two column format and should include:
+
+1) Include your roll number in the author
+2) Include sections, subsections, paragraphs
+3)  Use different fonts styles and sizes and formatting.
+4) Various styles of bullet points ex. itemize, enumerate, etc.
+5) Include at least four chart/plot figures generated with pyplot. Each plot should have  different style - line chart, bar chart, histogram etc. From python you will have to save figures.
+6) Use float package for proper placing of the figures.  
+7) Include at least three complex Mathematical equations of your choice.
+8) Include at least one table - you should use python code to generate the table from a dataFrame. The code should write a tex file and your latex file should use '\input' to include that tex file.
+9) Use caption for all figures and tables. Use labels for all sections, figures, and, tables. Refer to all figures, tables, and sections in your report using those labels.
+
+Python code for 5) and 8) together will also need to be submitted in a different file.
+
+Detailed submission instructions will be posted by TAs later.

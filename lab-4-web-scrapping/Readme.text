@@ -1,0 +1,28 @@
+a. 
+The location where I want to find the pattern:-
+
+[Moodle Login]http://moodle.iitb.ac.in/login/index.php ==> [Moodle Home]http://moodle.iitb.ac.in/my  ==> [CS 699-2017-1 Software Lab.]http://moodle.iitb.ac.in/course/view.php?id=5597 ==>[News forum]http://moodle.iitb.ac.in/mod/forum/view.php?id=41349 ==> [All the Disscussion Threads]
+
+
+b. The pattern to counted will be passed as command line argument.
+The  pattern occur on a line by itself i.e. that line could not contain any other character.
+The line on which patter is counted can contain any number of <SPACES> before and after the character.No other character except <SPACES> are
+eg. To count ++
+Input:-
+++
+<SPACE><SPACE>++<SPACE><SPACE>  
+h ++
+
+Output:- 2
+
+c.
+The command line will contain following arguments:-
+
+python3 solution.py <pattern> <username> <password>
+
+eg.
+
+python3 solution.py "++ 11" 173050011 abcdef@
+python3 solution.py +1 173050011 abcdef@
+
+d. I have edited the starting code provided by sir and added more features to it.
